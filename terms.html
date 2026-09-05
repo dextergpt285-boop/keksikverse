@@ -3,107 +3,645 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Terms of Service - KeksikVerse</title>
+
+  <title>Terms of Service — KeksikVerse</title>
+
+  <meta
+    name="description"
+    content="Terms of Service for KeksikVerse creator publishing tools."
+  >
 
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: Arial, sans-serif;
-      max-width: 800px;
-      margin: 60px auto;
-      padding: 0 20px;
-      line-height: 1.6;
-      color: #222;
-    }
+      margin: 0;
 
-    h1 {
-      margin-bottom: 10px;
-    }
+      font-family:
+        Inter,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Arial,
+        sans-serif;
 
-    h2 {
-      margin-top: 30px;
+      background:
+        radial-gradient(
+          circle at top left,
+          #202033 0,
+          #111119 35%,
+          #09090d 70%
+        );
+
+      color: #f7f7f8;
+      line-height: 1.7;
     }
 
     a {
-      color: #0066cc;
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(900px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+
+      background: rgba(9, 9, 13, 0.86);
+      backdrop-filter: blur(16px);
+
+      border-bottom: 1px solid
+        rgba(255, 255, 255, 0.08);
+    }
+
+    .nav {
+      min-height: 72px;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      gap: 24px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+
+      font-size: 21px;
+      font-weight: 700;
+    }
+
+    .brand-icon {
+      width: 38px;
+      height: 38px;
+
+      display: grid;
+      place-items: center;
+
+      border-radius: 12px;
+
+      background:
+        linear-gradient(
+          135deg,
+          #25f4ee,
+          #fe2c55
+        );
+
+      color: #08080b;
+      font-weight: 900;
+    }
+
+    .back-link {
+      color: #b9b9c3;
+      font-size: 14px;
+    }
+
+    .back-link:hover {
+      color: white;
+    }
+
+    main {
+      padding: 90px 0;
+    }
+
+    .badge {
+      display: inline-block;
+
+      padding: 7px 12px;
+
+      border: 1px solid
+        rgba(255, 255, 255, 0.12);
+
+      border-radius: 999px;
+
+      background:
+        rgba(255, 255, 255, 0.05);
+
+      color: #d5d5dc;
+
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    h1 {
+      margin: 20px 0 14px;
+
+      font-size:
+        clamp(46px, 7vw, 72px);
+
+      line-height: 1;
+      letter-spacing: -0.05em;
+    }
+
+    .updated {
+      margin-bottom: 50px;
+      color: #8e8e99;
+    }
+
+    .intro {
+      margin-bottom: 45px;
+
+      padding: 28px;
+
+      border-radius: 20px;
+
+      background:
+        rgba(255, 255, 255, 0.045);
+
+      border: 1px solid
+        rgba(255, 255, 255, 0.08);
+
+      color: #bcbcc6;
+      font-size: 17px;
+    }
+
+    .section {
+      padding: 30px 0;
+
+      border-bottom: 1px solid
+        rgba(255, 255, 255, 0.07);
+    }
+
+    .section:last-child {
+      border-bottom: none;
+    }
+
+    h2 {
+      margin: 0 0 14px;
+
+      font-size: 25px;
+      letter-spacing: -0.02em;
+    }
+
+    p {
+      margin: 0 0 14px;
+      color: #b6b6c0;
+    }
+
+    ul {
+      margin: 14px 0 0;
+      padding-left: 22px;
+
+      color: #b6b6c0;
+    }
+
+    li {
+      margin-bottom: 9px;
+    }
+
+    .highlight {
+      color: white;
+      font-weight: 600;
+    }
+
+    .links-box {
+      margin-top: 50px;
+
+      padding: 25px;
+
+      border-radius: 18px;
+
+      background:
+        linear-gradient(
+          135deg,
+          rgba(37, 244, 238, 0.07),
+          rgba(254, 44, 85, 0.07)
+        );
+
+      border: 1px solid
+        rgba(255, 255, 255, 0.09);
+
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .links-box a {
+      font-weight: 700;
+    }
+
+    .links-box a:hover {
+      text-decoration: underline;
     }
 
     footer {
-      margin-top: 60px;
-      color: #777;
+      padding: 35px 0;
+
+      border-top: 1px solid
+        rgba(255, 255, 255, 0.08);
+
+      color: #85858f;
+
       font-size: 14px;
+    }
+
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 22px;
+    }
+
+    .footer-links a:hover {
+      color: white;
     }
   </style>
 </head>
 
+
 <body>
 
-  <h1>Terms of Service</h1>
-  <p><strong>Last updated:</strong> September 5, 2026</p>
+<header>
+  <div class="container nav">
 
-  <p>
-    These Terms of Service govern the use of KeksikVerse.
-    By using KeksikVerse, you agree to these terms.
-  </p>
+    <a class="brand" href="index.html">
+      <div class="brand-icon">K</div>
+      KeksikVerse
+    </a>
 
-  <h2>1. Service Description</h2>
-  <p>
-    KeksikVerse is a desktop application designed to manage and publish
-    original short-form video content to connected social media accounts.
-  </p>
+    <a class="back-link" href="index.html">
+      ← Back to home
+    </a>
 
-  <h2>2. TikTok Integration</h2>
-  <p>
-    KeksikVerse may connect to TikTok through the official TikTok APIs.
-    Users must authorize access to their own TikTok account before
-    KeksikVerse can perform actions on their behalf.
-  </p>
+  </div>
+</header>
 
-  <h2>3. User Responsibility</h2>
-  <p>
-    Users are responsible for the content they upload or publish through
-    KeksikVerse and must ensure that their content complies with applicable
-    laws and the rules of the connected social media platforms.
-  </p>
 
-  <h2>4. Account Access</h2>
-  <p>
-    KeksikVerse does not require users to provide their TikTok password.
-    Authentication is performed through TikTok's authorization process.
-  </p>
+<main>
 
-  <h2>5. Availability</h2>
-  <p>
-    The service may be changed, updated, suspended, or discontinued at any time.
-    Availability of third-party integrations depends on the corresponding
-    third-party platforms and APIs.
-  </p>
+  <div class="container">
 
-  <h2>6. Limitation of Liability</h2>
-  <p>
-    KeksikVerse is provided on an "as is" basis. We are not responsible for
-    losses caused by third-party platform outages, API changes, account
-    restrictions, or content moderation decisions made by third-party platforms.
-  </p>
+    <div class="badge">
+      Legal
+    </div>
 
-  <h2>7. Changes to These Terms</h2>
-  <p>
-    These Terms of Service may be updated from time to time.
-    The latest version will be published on this page.
-  </p>
+    <h1>
+      Terms of Service
+    </h1>
 
-  <h2>8. Contact</h2>
-  <p>
-    For questions regarding these Terms of Service, please contact the
-    KeksikVerse administrator.
-  </p>
+    <div class="updated">
+      Last updated: September 5, 2026
+    </div>
 
-  <p>
-    <a href="index.html">Back to KeksikVerse</a>
-  </p>
 
-  <footer>
-    © 2026 KeksikVerse
-  </footer>
+    <div class="intro">
+      These Terms of Service govern the use of
+      KeksikVerse, a desktop application designed
+      to help creators manage and publish their own
+      short-form video content to authorized social
+      media accounts.
+    </div>
+
+
+    <div class="section">
+
+      <h2>
+        1. Service Description
+      </h2>
+
+      <p>
+        KeksikVerse provides desktop tools for
+        organizing, preparing and publishing
+        short-form video content.
+      </p>
+
+      <p>
+        Users may connect supported social media
+        accounts and use available publishing
+        features provided through official platform
+        APIs.
+      </p>
+
+    </div>
+
+
+    <div class="section">
+
+      <h2>
+        2. TikTok Integration
+      </h2>
+
+      <p>
+        KeksikVerse may connect to TikTok through
+        TikTok's official developer APIs.
+      </p>
+
+      <p>
+        Users must authorize access to their own
+        TikTok account before KeksikVerse can perform
+        actions on their behalf.
+      </p>
+
+      <p>
+        <span class="highlight">
+          KeksikVerse does not require users to provide
+          their TikTok password.
+        </span>
+      </p>
+
+    </div>
+
+
+    <div class="section">
+
+      <h2>
+        3. User Authorization
+      </h2>
+
+      <p>
+        Users control which supported account is
+        connected to KeksikVerse and which permissions
+        are granted during the authorization process.
+      </p>
+
+      <p>
+        Users may revoke access through the relevant
+        third-party platform's account or authorization
+        settings.
+      </p>
+
+    </div>
+
+
+    <div class="section">
+
+      <h2>
+        4. Content Ownership
+      </h2>
+
+      <p>
+        Users retain responsibility for the content
+        they select, upload or publish through
+        KeksikVerse.
+      </p>
+
+      <p>
+        KeksikVerse does not claim ownership of user
+        video files, captions or other original content.
+      </p>
+
+    </div>
+
+
+    <div class="section">
+
+      <h2>
+        5. User Responsibilities
+      </h2>
+
+      <p>
+        Users are responsible for ensuring that
+        content published through KeksikVerse:
+      </p>
+
+      <ul>
+        <li>
+          belongs to them or is authorized for use;
+        </li>
+
+        <li>
+          complies with applicable laws;
+        </li>
+
+        <li>
+          complies with TikTok and other connected
+          platform rules;
+        </li>
+
+        <li>
+          does not infringe intellectual property,
+          privacy or other third-party rights;
+        </li>
+
+        <li>
+          is published using appropriate settings
+          selected by the user.
+        </li>
+      </ul>
+
+    </div>
+
+
+    <div class="section">
+
+      <h2>
+        6. Publishing Controls
+      </h2>
+
+      <p>
+        KeksikVerse may display publishing options
+        provided by the connected platform, including
+        account information, captions, privacy options
+        and interaction settings.
+      </p>
+
+      <p>
+        The user is responsible for reviewing the
+        available settings and confirming publication.
+      </p>
+
+    </div>
+
+
+    <div class="section">
+
+      <h2>
+        7. Third-Party Platforms
+      </h2>
+
+      <p>
+        KeksikVerse depends on third-party platforms
+        and APIs, including TikTok.
+      </p>
+
+      <p>
+        Availability and functionality may change if
+        a third-party platform changes its API,
+        authorization requirements, policies,
+        technical limits or service availability.
+      </p>
+
+    </div>
+
+
+    <div class="section">
+
+      <h2>
+        8. Account Restrictions and Moderation
+      </h2>
+
+      <p>
+        Decisions regarding moderation, content
+        availability, account restrictions or
+        publication eligibility are made by the
+        corresponding third-party platform.
+      </p>
+
+      <p>
+        KeksikVerse cannot guarantee that content
+        submitted through an API will be accepted,
+        published, distributed or remain available.
+      </p>
+
+    </div>
+
+
+    <div class="section">
+
+      <h2>
+        9. Availability
+      </h2>
+
+      <p>
+        KeksikVerse may be updated, modified,
+        suspended or discontinued at any time.
+      </p>
+
+      <p>
+        Temporary interruptions may also occur because
+        of network problems, third-party service
+        outages, API maintenance or platform changes.
+      </p>
+
+    </div>
+
+
+    <div class="section">
+
+      <h2>
+        10. Security
+      </h2>
+
+      <p>
+        Users are responsible for protecting access
+        to their device and any locally stored
+        authorization information.
+      </p>
+
+      <p>
+        Users should revoke connected account access
+        if they believe their device or authorization
+        credentials have been compromised.
+      </p>
+
+    </div>
+
+
+    <div class="section">
+
+      <h2>
+        11. Limitation of Liability
+      </h2>
+
+      <p>
+        KeksikVerse is provided on an
+        <span class="highlight">"as is"</span> basis.
+      </p>
+
+      <p>
+        To the extent permitted by applicable law,
+        KeksikVerse is not responsible for losses
+        resulting from third-party platform outages,
+        API changes, content moderation decisions,
+        account restrictions, connectivity problems
+        or actions taken by connected third-party
+        services.
+      </p>
+
+    </div>
+
+
+    <div class="section">
+
+      <h2>
+        12. Changes to These Terms
+      </h2>
+
+      <p>
+        These Terms of Service may be updated when
+        KeksikVerse functionality, integrations or
+        legal requirements change.
+      </p>
+
+      <p>
+        The latest version will be published on this
+        page.
+      </p>
+
+    </div>
+
+
+    <div class="section">
+
+      <h2>
+        13. Contact
+      </h2>
+
+      <p>
+        Questions regarding these Terms of Service
+        may be directed to the KeksikVerse
+        administrator through the official
+        KeksikVerse project website.
+      </p>
+
+    </div>
+
+
+    <div class="links-box">
+
+      <a href="index.html">
+        Home
+      </a>
+
+      <a href="privacy.html">
+        Privacy Policy
+      </a>
+
+    </div>
+
+  </div>
+
+</main>
+
+
+<footer>
+
+  <div class="container footer-content">
+
+    <div>
+      © 2026 KeksikVerse
+    </div>
+
+    <div class="footer-links">
+
+      <a href="index.html">
+        Home
+      </a>
+
+      <a href="privacy.html">
+        Privacy Policy
+      </a>
+
+    </div>
+
+  </div>
+
+</footer>
 
 </body>
 </html>
