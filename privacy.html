@@ -3,123 +3,619 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Privacy Policy - KeksikVerse</title>
+
+  <title>Privacy Policy — KeksikVerse</title>
+
+  <meta
+    name="description"
+    content="Privacy Policy for KeksikVerse creator publishing tools."
+  >
 
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: Arial, sans-serif;
-      max-width: 800px;
-      margin: 60px auto;
-      padding: 0 20px;
-      line-height: 1.6;
-      color: #222;
-    }
+      margin: 0;
 
-    h1 {
-      margin-bottom: 10px;
-    }
+      font-family:
+        Inter,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Arial,
+        sans-serif;
 
-    h2 {
-      margin-top: 30px;
+      background:
+        radial-gradient(
+          circle at top left,
+          #202033 0,
+          #111119 35%,
+          #09090d 70%
+        );
+
+      color: #f7f7f8;
+      line-height: 1.7;
     }
 
     a {
-      color: #0066cc;
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(900px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+
+      background: rgba(9, 9, 13, 0.86);
+      backdrop-filter: blur(16px);
+
+      border-bottom: 1px solid
+        rgba(255, 255, 255, 0.08);
+    }
+
+    .nav {
+      min-height: 72px;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      gap: 24px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+
+      font-size: 21px;
+      font-weight: 700;
+    }
+
+    .brand-icon {
+      width: 38px;
+      height: 38px;
+
+      display: grid;
+      place-items: center;
+
+      border-radius: 12px;
+
+      background:
+        linear-gradient(
+          135deg,
+          #25f4ee,
+          #fe2c55
+        );
+
+      color: #08080b;
+      font-weight: 900;
+    }
+
+    .back-link {
+      color: #b9b9c3;
+      font-size: 14px;
+    }
+
+    .back-link:hover {
+      color: white;
+    }
+
+    main {
+      padding: 90px 0;
+    }
+
+    .badge {
+      display: inline-block;
+
+      padding: 7px 12px;
+
+      border: 1px solid
+        rgba(255, 255, 255, 0.12);
+
+      border-radius: 999px;
+
+      background:
+        rgba(255, 255, 255, 0.05);
+
+      color: #d5d5dc;
+
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    h1 {
+      margin: 20px 0 14px;
+
+      font-size:
+        clamp(46px, 7vw, 72px);
+
+      line-height: 1;
+      letter-spacing: -0.05em;
+    }
+
+    .updated {
+      margin-bottom: 50px;
+      color: #8e8e99;
+    }
+
+    .intro {
+      margin-bottom: 45px;
+
+      padding: 28px;
+
+      border-radius: 20px;
+
+      background:
+        rgba(255, 255, 255, 0.045);
+
+      border: 1px solid
+        rgba(255, 255, 255, 0.08);
+
+      color: #bcbcc6;
+      font-size: 17px;
+    }
+
+    .section {
+      padding: 30px 0;
+
+      border-bottom: 1px solid
+        rgba(255, 255, 255, 0.07);
+    }
+
+    .section:last-child {
+      border-bottom: none;
+    }
+
+    h2 {
+      margin: 0 0 14px;
+
+      font-size: 25px;
+      letter-spacing: -0.02em;
+    }
+
+    p {
+      margin: 0 0 14px;
+      color: #b6b6c0;
+    }
+
+    ul {
+      margin: 14px 0 0;
+      padding-left: 22px;
+
+      color: #b6b6c0;
+    }
+
+    li {
+      margin-bottom: 9px;
+    }
+
+    .highlight {
+      color: white;
+      font-weight: 600;
+    }
+
+    .links-box {
+      margin-top: 50px;
+
+      padding: 25px;
+
+      border-radius: 18px;
+
+      background:
+        linear-gradient(
+          135deg,
+          rgba(37, 244, 238, 0.07),
+          rgba(254, 44, 85, 0.07)
+        );
+
+      border: 1px solid
+        rgba(255, 255, 255, 0.09);
+
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .links-box a {
+      font-weight: 700;
+    }
+
+    .links-box a:hover {
+      text-decoration: underline;
     }
 
     footer {
-      margin-top: 60px;
-      color: #777;
+      padding: 35px 0;
+
+      border-top: 1px solid
+        rgba(255, 255, 255, 0.08);
+
+      color: #85858f;
+
       font-size: 14px;
+    }
+
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 22px;
+    }
+
+    .footer-links a:hover {
+      color: white;
     }
   </style>
 </head>
 
+
 <body>
 
-  <h1>Privacy Policy</h1>
-  <p><strong>Last updated:</strong> September 5, 2026</p>
+<header>
+  <div class="container nav">
 
-  <p>
-    This Privacy Policy explains how KeksikVerse handles information
-    when users connect social media accounts and use publishing features.
-  </p>
+    <a class="brand" href="index.html">
+      <div class="brand-icon">K</div>
+      KeksikVerse
+    </a>
 
-  <h2>1. Information We Use</h2>
-  <p>
-    KeksikVerse may process information required to connect to third-party
-    social media platforms, including account identifiers, authorization
-    tokens, and permissions granted by the user.
-  </p>
+    <a class="back-link" href="index.html">
+      ← Back to home
+    </a>
 
-  <h2>2. TikTok Account Authorization</h2>
-  <p>
-    When a user connects a TikTok account, authentication is performed
-    through TikTok's official authorization process.
-    KeksikVerse does not ask for or store the user's TikTok password.
-  </p>
+  </div>
+</header>
 
-  <h2>3. Access Tokens</h2>
-  <p>
-    KeksikVerse may store access tokens and refresh tokens locally on the
-    user's device in order to maintain the connection to an authorized
-    TikTok account and perform permitted actions through TikTok APIs.
-  </p>
 
-  <h2>4. How Information Is Used</h2>
-  <p>
-    Information obtained through TikTok authorization is used only to
-    provide features requested by the user, such as connecting an account
-    and publishing video content.
-  </p>
+<main>
 
-  <h2>5. Data Sharing</h2>
-  <p>
-    KeksikVerse does not sell personal information.
-    Information may be transmitted to TikTok or other connected platforms
-    only as necessary to perform the requested API operations.
-  </p>
+  <div class="container">
 
-  <h2>6. Data Storage</h2>
-  <p>
-    Authorization information used by the desktop application may be stored
-    locally on the user's computer. Users are responsible for maintaining
-    the security of their device and local files.
-  </p>
+    <div class="badge">
+      Legal
+    </div>
 
-  <h2>7. Revoking Access</h2>
-  <p>
-    Users may revoke access to connected social media accounts through the
-    corresponding platform's account settings. Locally stored authorization
-    information may also be removed from the user's device.
-  </p>
+    <h1>
+      Privacy Policy
+    </h1>
 
-  <h2>8. Third-Party Services</h2>
-  <p>
-    KeksikVerse relies on third-party services and APIs, including TikTok.
-    Their processing of information is governed by their own privacy policies
-    and terms.
-  </p>
+    <div class="updated">
+      Last updated: September 5, 2026
+    </div>
 
-  <h2>9. Changes to This Policy</h2>
-  <p>
-    This Privacy Policy may be updated from time to time.
-    The latest version will be published on this page.
-  </p>
 
-  <h2>10. Contact</h2>
-  <p>
-    For questions regarding this Privacy Policy, please contact the
-    KeksikVerse administrator.
-  </p>
+    <div class="intro">
+      This Privacy Policy explains how KeksikVerse
+      handles information when creators use the
+      desktop application to connect their social
+      media accounts and publish their own content.
+    </div>
 
-  <p>
-    <a href="index.html">Back to KeksikVerse</a>
-  </p>
 
-  <footer>
-    © 2026 KeksikVerse
-  </footer>
+    <div class="section">
+
+      <h2>
+        1. Information KeksikVerse Uses
+      </h2>
+
+      <p>
+        KeksikVerse processes only the information
+        required to provide account connection and
+        publishing functionality.
+      </p>
+
+      <p>
+        Depending on the connected platform, this may
+        include account identifiers, profile information,
+        authorization permissions, access tokens and
+        refresh tokens.
+      </p>
+
+    </div>
+
+
+    <div class="section">
+
+      <h2>
+        2. TikTok Authorization
+      </h2>
+
+      <p>
+        When a user connects a TikTok account,
+        authentication is performed through TikTok's
+        official authorization process.
+      </p>
+
+      <p>
+        <span class="highlight">
+          KeksikVerse does not request, receive or store
+          the user's TikTok password.
+        </span>
+      </p>
+
+      <p>
+        Users authorize KeksikVerse only for the
+        permissions presented during the TikTok
+        authorization process.
+      </p>
+
+    </div>
+
+
+    <div class="section">
+
+      <h2>
+        3. Access and Refresh Tokens
+      </h2>
+
+      <p>
+        Authorization tokens may be stored locally on
+        the user's device so KeksikVerse can maintain
+        an authorized connection to TikTok and perform
+        publishing actions requested by the user.
+      </p>
+
+      <p>
+        Tokens are used only for communication with
+        the relevant platform APIs.
+      </p>
+
+    </div>
+
+
+    <div class="section">
+
+      <h2>
+        4. How Information Is Used
+      </h2>
+
+      <p>
+        Information obtained through an authorized
+        TikTok connection is used to provide features
+        requested by the user, including:
+      </p>
+
+      <ul>
+        <li>
+          identifying the connected TikTok account;
+        </li>
+
+        <li>
+          displaying available publishing settings;
+        </li>
+
+        <li>
+          preparing content selected by the user;
+        </li>
+
+        <li>
+          publishing content after user confirmation;
+        </li>
+
+        <li>
+          checking the processing status of submitted
+          content.
+        </li>
+      </ul>
+
+    </div>
+
+
+    <div class="section">
+
+      <h2>
+        5. Video Content
+      </h2>
+
+      <p>
+        KeksikVerse allows users to select their own
+        video files for publication.
+      </p>
+
+      <p>
+        When the user confirms a TikTok publication,
+        the selected content and related publishing
+        information are transmitted to TikTok through
+        TikTok's official APIs.
+      </p>
+
+    </div>
+
+
+    <div class="section">
+
+      <h2>
+        6. Data Sharing
+      </h2>
+
+      <p>
+        KeksikVerse does not sell personal information.
+      </p>
+
+      <p>
+        Information is transmitted to connected
+        third-party services only when necessary to
+        perform functionality requested by the user,
+        such as authentication or content publication.
+      </p>
+
+    </div>
+
+
+    <div class="section">
+
+      <h2>
+        7. Local Data Storage
+      </h2>
+
+      <p>
+        KeksikVerse is a desktop application.
+        Authorization information required by the
+        application may be stored locally on the
+        user's computer.
+      </p>
+
+      <p>
+        Users are responsible for maintaining the
+        security of their computer, operating system
+        and local files.
+      </p>
+
+    </div>
+
+
+    <div class="section">
+
+      <h2>
+        8. Revoking TikTok Access
+      </h2>
+
+      <p>
+        Users may revoke KeksikVerse access through
+        the account or authorization settings provided
+        by TikTok.
+      </p>
+
+      <p>
+        Locally stored authorization information may
+        also be removed from the user's device.
+      </p>
+
+    </div>
+
+
+    <div class="section">
+
+      <h2>
+        9. Third-Party Services
+      </h2>
+
+      <p>
+        KeksikVerse relies on third-party platforms
+        and APIs, including TikTok.
+      </p>
+
+      <p>
+        Information processed directly by those
+        services is also governed by their own terms
+        and privacy policies.
+      </p>
+
+    </div>
+
+
+    <div class="section">
+
+      <h2>
+        10. Data Security
+      </h2>
+
+      <p>
+        KeksikVerse is designed to limit account access
+        to the permissions authorized by the user.
+      </p>
+
+      <p>
+        Users should protect access to their device
+        and should revoke application authorization
+        if they believe their account or device has
+        been compromised.
+      </p>
+
+    </div>
+
+
+    <div class="section">
+
+      <h2>
+        11. Changes to This Privacy Policy
+      </h2>
+
+      <p>
+        This Privacy Policy may be updated when
+        KeksikVerse functionality, integrations or
+        legal requirements change.
+      </p>
+
+      <p>
+        The latest version will always be published
+        on this page.
+      </p>
+
+    </div>
+
+
+    <div class="section">
+
+      <h2>
+        12. Contact
+      </h2>
+
+      <p>
+        Questions regarding this Privacy Policy or
+        KeksikVerse data practices may be directed to
+        the KeksikVerse administrator through the
+        official KeksikVerse project website.
+      </p>
+
+    </div>
+
+
+    <div class="links-box">
+
+      <a href="index.html">
+        Home
+      </a>
+
+      <a href="terms.html">
+        Terms of Service
+      </a>
+
+    </div>
+
+  </div>
+
+</main>
+
+
+<footer>
+
+  <div class="container footer-content">
+
+    <div>
+      © 2026 KeksikVerse
+    </div>
+
+    <div class="footer-links">
+
+      <a href="index.html">
+        Home
+      </a>
+
+      <a href="terms.html">
+        Terms of Service
+      </a>
+
+    </div>
+
+  </div>
+
+</footer>
 
 </body>
 </html>
