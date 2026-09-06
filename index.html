@@ -56,21 +56,16 @@
       position: sticky;
       top: 0;
       z-index: 10;
-
       background: rgba(9, 9, 13, 0.86);
       backdrop-filter: blur(16px);
-
-      border-bottom: 1px solid
-        rgba(255, 255, 255, 0.08);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
     }
 
     .nav {
       min-height: 72px;
-
       display: flex;
       align-items: center;
       justify-content: space-between;
-
       gap: 24px;
     }
 
@@ -78,7 +73,6 @@
       display: flex;
       align-items: center;
       gap: 12px;
-
       font-size: 21px;
       font-weight: 700;
       letter-spacing: -0.02em;
@@ -87,27 +81,17 @@
     .brand-icon {
       width: 38px;
       height: 38px;
-
       display: grid;
       place-items: center;
-
       border-radius: 12px;
-
-      background:
-        linear-gradient(
-          135deg,
-          #25f4ee,
-          #fe2c55
-        );
-
+      background: linear-gradient(135deg, #25f4ee, #fe2c55);
       color: #08080b;
       font-weight: 900;
     }
 
     nav {
       display: flex;
-      gap: 28px;
-
+      gap: 24px;
       font-size: 14px;
       color: #c7c7d0;
     }
@@ -122,10 +106,7 @@
 
     .hero-grid {
       display: grid;
-      grid-template-columns:
-        minmax(0, 1.2fr)
-        minmax(320px, 0.8fr);
-
+      grid-template-columns: minmax(0, 1.2fr) minmax(320px, 0.8fr);
       gap: 70px;
       align-items: center;
     }
@@ -133,63 +114,39 @@
     .badge {
       display: inline-flex;
       align-items: center;
-
       padding: 7px 12px;
-
-      border: 1px solid
-        rgba(255, 255, 255, 0.12);
-
+      border: 1px solid rgba(255, 255, 255, 0.12);
       border-radius: 999px;
-
-      background:
-        rgba(255, 255, 255, 0.05);
-
+      background: rgba(255, 255, 255, 0.05);
       color: #d5d5dc;
-
       font-size: 13px;
       font-weight: 600;
     }
 
     h1 {
       margin: 22px 0 24px;
-
       max-width: 720px;
-
-      font-size:
-        clamp(48px, 7vw, 82px);
-
+      font-size: clamp(48px, 7vw, 82px);
       line-height: 0.98;
-
       letter-spacing: -0.055em;
     }
 
     .gradient-text {
-      background:
-        linear-gradient(
-          90deg,
-          #25f4ee,
-          #ffffff 48%,
-          #fe2c55
-        );
-
+      background: linear-gradient(90deg, #25f4ee, #ffffff 48%, #fe2c55);
       -webkit-background-clip: text;
       background-clip: text;
-
       color: transparent;
     }
 
     .hero-text {
       max-width: 700px;
-
       margin: 0;
-
       font-size: 19px;
       color: #b8b8c2;
     }
 
     .hero-actions {
       margin-top: 34px;
-
       display: flex;
       gap: 14px;
       flex-wrap: wrap;
@@ -199,18 +156,12 @@
       display: inline-flex;
       align-items: center;
       justify-content: center;
-
       min-height: 48px;
       padding: 0 22px;
-
       border-radius: 12px;
-
       font-size: 15px;
       font-weight: 700;
-
-      transition:
-        transform 0.2s,
-        background 0.2s;
+      transition: transform 0.2s, background 0.2s;
     }
 
     .button:hover {
@@ -223,27 +174,16 @@
     }
 
     .button-secondary {
-      border: 1px solid
-        rgba(255, 255, 255, 0.14);
-
-      background:
-        rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      background: rgba(255, 255, 255, 0.05);
     }
 
     .app-card {
       padding: 24px;
-
       border-radius: 24px;
-
-      border: 1px solid
-        rgba(255, 255, 255, 0.10);
-
-      background:
-        rgba(255, 255, 255, 0.055);
-
-      box-shadow:
-        0 30px 80px
-        rgba(0, 0, 0, 0.35);
+      border: 1px solid rgba(255, 255, 255, 0.10);
+      background: rgba(255, 255, 255, 0.055);
+      box-shadow: 0 30px 80px rgba(0, 0, 0, 0.35);
     }
 
     .window-bar {
@@ -255,62 +195,52 @@
     .dot {
       width: 10px;
       height: 10px;
-
       border-radius: 50%;
       background: #555560;
     }
 
     .preview {
       border-radius: 18px;
-
       padding: 26px;
-
       background: #101017;
-
-      border: 1px solid
-        rgba(255, 255, 255, 0.07);
+      border: 1px solid rgba(255, 255, 255, 0.07);
     }
 
     .preview-title {
       margin-bottom: 18px;
-
       font-size: 17px;
       font-weight: 700;
     }
 
     .field {
       margin-bottom: 14px;
-
       padding: 12px 14px;
-
       border-radius: 10px;
-
       background: #181820;
-
       color: #bcbcc6;
-
       font-size: 13px;
     }
 
-    .publish-button {
+    .publish-buttons {
+      display: grid;
+      gap: 10px;
       margin-top: 20px;
+    }
 
+    .publish-button {
       padding: 13px;
-
       border-radius: 10px;
-
       text-align: center;
-
-      background:
-        linear-gradient(
-          90deg,
-          #25f4ee,
-          #fe2c55
-        );
-
       color: white;
-
       font-weight: 800;
+    }
+
+    .publish-button.tiktok {
+      background: linear-gradient(90deg, #25f4ee, #fe2c55);
+    }
+
+    .publish-button.youtube {
+      background: linear-gradient(90deg, #ff0033, #ff4d4d);
     }
 
     section {
@@ -319,60 +249,56 @@
 
     .section-title {
       margin: 0 0 16px;
-
-      font-size:
-        clamp(34px, 5vw, 52px);
-
+      font-size: clamp(34px, 5vw, 52px);
       line-height: 1.05;
-
       letter-spacing: -0.04em;
     }
 
     .section-lead {
-      max-width: 720px;
-
+      max-width: 760px;
       margin: 0 0 42px;
-
       color: #a9a9b3;
       font-size: 17px;
     }
 
-    .features {
+    .features,
+    .platform-grid,
+    .policy-grid {
       display: grid;
-
-      grid-template-columns:
-        repeat(3, 1fr);
-
+      grid-template-columns: repeat(2, 1fr);
       gap: 18px;
     }
 
-    .feature {
+    .features {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .feature,
+    .platform-card,
+    .policy-card {
       padding: 28px;
-
       border-radius: 18px;
-
-      border: 1px solid
-        rgba(255, 255, 255, 0.08);
-
-      background:
-        rgba(255, 255, 255, 0.035);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      background: rgba(255, 255, 255, 0.035);
     }
 
     .feature-number {
       margin-bottom: 22px;
-
       font-size: 13px;
       font-weight: 700;
-
       color: #797985;
     }
 
-    .feature h3 {
+    .feature h3,
+    .platform-card h3,
+    .policy-card h3 {
       margin: 0 0 10px;
       font-size: 20px;
     }
 
-    .feature p {
+    .feature p,
+    .platform-card p,
+    .policy-card p {
       margin: 0;
       color: #aaaab5;
     }
@@ -380,42 +306,27 @@
     .workflow {
       display: grid;
       gap: 14px;
-
       max-width: 850px;
     }
 
     .workflow-item {
       display: grid;
-
-      grid-template-columns:
-        52px 1fr;
-
+      grid-template-columns: 52px 1fr;
       gap: 20px;
       align-items: start;
-
       padding: 22px;
-
       border-radius: 16px;
-
-      background:
-        rgba(255, 255, 255, 0.035);
-
-      border: 1px solid
-        rgba(255, 255, 255, 0.07);
+      background: rgba(255, 255, 255, 0.035);
+      border: 1px solid rgba(255, 255, 255, 0.07);
     }
 
     .workflow-number {
       width: 42px;
       height: 42px;
-
       display: grid;
       place-items: center;
-
       border-radius: 12px;
-
-      background:
-        rgba(255, 255, 255, 0.08);
-
+      background: rgba(255, 255, 255, 0.08);
       font-weight: 800;
     }
 
@@ -429,47 +340,59 @@
       color: #aaaab5;
     }
 
-    .tiktok-section {
-      padding: 45px;
-
-      border-radius: 26px;
-
+    .platform-card.tiktok {
       background:
         linear-gradient(
           135deg,
           rgba(37, 244, 238, 0.08),
           rgba(254, 44, 85, 0.08)
         );
-
-      border: 1px solid
-        rgba(255, 255, 255, 0.09);
     }
 
-    .tiktok-section p {
-      max-width: 850px;
-      margin-bottom: 0;
+    .platform-card.youtube {
+      background:
+        linear-gradient(
+          135deg,
+          rgba(255, 0, 51, 0.11),
+          rgba(255, 255, 255, 0.03)
+        );
+    }
 
-      color: #b7b7c0;
+    .platform-label {
+      display: inline-block;
+      margin-bottom: 18px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.08);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    .policy-card a {
+      display: block;
+      margin-top: 10px;
+      color: #ffffff;
+      font-weight: 700;
+    }
+
+    .policy-card a:hover {
+      text-decoration: underline;
     }
 
     footer {
       margin-top: 60px;
       padding: 35px 0;
-
-      border-top: 1px solid
-        rgba(255, 255, 255, 0.08);
-
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
       color: #85858f;
-
       font-size: 14px;
     }
 
     .footer-content {
       display: flex;
-
       align-items: center;
       justify-content: space-between;
-
       gap: 20px;
       flex-wrap: wrap;
     }
@@ -477,6 +400,7 @@
     .footer-links {
       display: flex;
       gap: 22px;
+      flex-wrap: wrap;
     }
 
     .footer-links a:hover {
@@ -484,12 +408,10 @@
     }
 
     @media (max-width: 850px) {
-
-      .hero-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .features {
+      .hero-grid,
+      .features,
+      .platform-grid,
+      .policy-grid {
         grid-template-columns: 1fr;
       }
 
@@ -500,14 +422,9 @@
       .hero {
         padding-top: 70px;
       }
-
-      .tiktok-section {
-        padding: 28px;
-      }
     }
   </style>
 </head>
-
 
 <body>
 
@@ -522,7 +439,8 @@
     <nav>
       <a href="#features">Features</a>
       <a href="#workflow">How it works</a>
-      <a href="#tiktok">TikTok integration</a>
+      <a href="#platforms">TikTok & YouTube</a>
+      <a href="#policies">Platform policies</a>
       <a href="privacy.html">Privacy</a>
     </nav>
 
@@ -551,8 +469,8 @@
           KeksikVerse helps short-form video creators
           organize their content, connect authorized
           social media accounts, configure publishing
-          settings, and publish their own videos from
-          one desktop workflow.
+          settings, and publish their own videos to
+          supported platforms including TikTok and YouTube.
         </p>
 
         <div class="hero-actions">
@@ -566,9 +484,9 @@
 
           <a
             class="button button-secondary"
-            href="#tiktok"
+            href="#platforms"
           >
-            TikTok integration
+            TikTok & YouTube
           </a>
 
         </div>
@@ -591,7 +509,7 @@
           </div>
 
           <div class="field">
-            Account: @creator
+            Account: connected creator account
           </div>
 
           <div class="field">
@@ -599,15 +517,21 @@
           </div>
 
           <div class="field">
-            Caption: My latest video
+            Title / Caption: My latest video
           </div>
 
           <div class="field">
             Privacy: Choose before publishing
           </div>
 
-          <div class="publish-button">
-            Publish to TikTok
+          <div class="publish-buttons">
+            <div class="publish-button tiktok">
+              Publish to TikTok
+            </div>
+
+            <div class="publish-button youtube">
+              Upload to YouTube
+            </div>
           </div>
 
         </div>
@@ -628,8 +552,8 @@
 
       <p class="section-lead">
         KeksikVerse provides a simple desktop workflow
-        for managing original video content and
-        publishing it to accounts authorized by the user.
+        for managing original video content and publishing
+        it to social media accounts authorized by the user.
       </p>
 
 
@@ -660,13 +584,13 @@
           </div>
 
           <h3>
-            Connect your account
+            Connect your accounts
           </h3>
 
           <p>
-            Users authorize access to their own
-            TikTok account through TikTok's official
-            authorization process.
+            Users authorize access to their own TikTok
+            or Google / YouTube account through the
+            platform's official authorization process.
           </p>
 
         </div>
@@ -683,9 +607,9 @@
           </h3>
 
           <p>
-            Review the selected video, caption and
+            Review the selected video, metadata and
             available publishing settings before
-            confirming the post.
+            confirming an upload or post.
           </p>
 
         </div>
@@ -706,8 +630,9 @@
       </h2>
 
       <p class="section-lead">
-        The creator remains in control of the TikTok
-        account and the content being published.
+        The creator remains in control of the connected
+        account, selected video, metadata and final
+        publishing action.
       </p>
 
 
@@ -721,13 +646,13 @@
 
           <div>
             <h3>
-              Connect TikTok
+              Connect a supported account
             </h3>
 
             <p>
-              Sign in through TikTok and authorize
-              KeksikVerse to access the selected
-              publishing features.
+              Sign in through TikTok or Google and
+              authorize only the permissions presented
+              during the official OAuth flow.
             </p>
           </div>
 
@@ -766,9 +691,9 @@
             </h3>
 
             <p>
-              Review the account, caption, privacy
-              options and available interaction
-              settings before publishing.
+              Review the connected account, title or
+              caption, privacy options, tags and any
+              other settings available for the platform.
             </p>
           </div>
 
@@ -787,9 +712,9 @@
             </h3>
 
             <p>
-              The user explicitly confirms the
-              publication before KeksikVerse sends
-              the content through the TikTok API.
+              The user explicitly confirms the action
+              before KeksikVerse sends content through
+              the selected platform's official API.
             </p>
           </div>
 
@@ -802,26 +727,134 @@
   </section>
 
 
-  <section id="tiktok">
+  <section id="platforms">
 
     <div class="container">
 
-      <div class="tiktok-section">
+      <h2 class="section-title">
+        Supported platform integrations
+      </h2>
 
-        <h2 class="section-title">
-          TikTok integration
-        </h2>
+      <p class="section-lead">
+        KeksikVerse uses official platform authorization
+        and publishing APIs. Users connect their own
+        accounts and remain in control of every upload.
+      </p>
 
-        <p>
-          KeksikVerse integrates with TikTok using
-          TikTok's official developer APIs.
-          TikTok authentication is handled through
-          TikTok's authorization flow. KeksikVerse
-          does not request or store a user's TikTok
-          password. Users connect their own account
-          and control the content and publishing
-          settings used for each post.
-        </p>
+      <div class="platform-grid">
+
+        <div class="platform-card tiktok">
+
+          <div class="platform-label">
+            TikTok
+          </div>
+
+          <h3>
+            TikTok integration
+          </h3>
+
+          <p>
+            KeksikVerse integrates with TikTok using
+            TikTok's official developer APIs. TikTok
+            authentication is handled through TikTok's
+            authorization flow. KeksikVerse does not
+            request or store a user's TikTok password.
+          </p>
+
+        </div>
+
+
+        <div class="platform-card youtube">
+
+          <div class="platform-label">
+            YouTube
+          </div>
+
+          <h3>
+            YouTube integration
+          </h3>
+
+          <p>
+            KeksikVerse integrates with YouTube using
+            the YouTube Data API. Google OAuth 2.0 is
+            used to authorize access to the user's own
+            YouTube account. KeksikVerse uses authorized
+            access to upload videos selected and confirmed
+            by the user.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <section id="policies">
+
+    <div class="container">
+
+      <h2 class="section-title">
+        Platform policies
+      </h2>
+
+      <p class="section-lead">
+        KeksikVerse users remain subject to the terms
+        and privacy policies of the platforms they connect.
+      </p>
+
+      <div class="policy-grid">
+
+        <div class="policy-card">
+          <h3>TikTok</h3>
+
+          <a
+            href="https://www.tiktok.com/legal/page/row/terms-of-service/en"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            TikTok Terms of Service
+          </a>
+
+          <a
+            href="https://www.tiktok.com/legal/page/row/privacy-policy/en"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            TikTok Privacy Policy
+          </a>
+        </div>
+
+
+        <div class="policy-card">
+          <h3>YouTube / Google</h3>
+
+          <a
+            href="https://www.youtube.com/t/terms"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            YouTube Terms of Service
+          </a>
+
+          <a
+            href="https://policies.google.com/privacy"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Google Privacy Policy
+          </a>
+
+          <a
+            href="https://developers.google.com/youtube/terms/api-services-terms-of-service"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            YouTube API Services Terms of Service
+          </a>
+        </div>
 
       </div>
 
@@ -843,11 +876,27 @@
     <div class="footer-links">
 
       <a href="terms.html">
-        Terms of Service
+        KeksikVerse Terms of Service
       </a>
 
       <a href="privacy.html">
-        Privacy Policy
+        KeksikVerse Privacy Policy
+      </a>
+
+      <a
+        href="https://www.youtube.com/t/terms"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        YouTube Terms
+      </a>
+
+      <a
+        href="https://policies.google.com/privacy"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Google Privacy
       </a>
 
     </div>
