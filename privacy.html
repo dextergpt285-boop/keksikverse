@@ -53,21 +53,16 @@
       position: sticky;
       top: 0;
       z-index: 10;
-
       background: rgba(9, 9, 13, 0.86);
       backdrop-filter: blur(16px);
-
-      border-bottom: 1px solid
-        rgba(255, 255, 255, 0.08);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
     }
 
     .nav {
       min-height: 72px;
-
       display: flex;
       align-items: center;
       justify-content: space-between;
-
       gap: 24px;
     }
 
@@ -75,7 +70,6 @@
       display: flex;
       align-items: center;
       gap: 12px;
-
       font-size: 21px;
       font-weight: 700;
     }
@@ -83,19 +77,10 @@
     .brand-icon {
       width: 38px;
       height: 38px;
-
       display: grid;
       place-items: center;
-
       border-radius: 12px;
-
-      background:
-        linear-gradient(
-          135deg,
-          #25f4ee,
-          #fe2c55
-        );
-
+      background: linear-gradient(135deg, #25f4ee, #fe2c55);
       color: #08080b;
       font-weight: 900;
     }
@@ -115,29 +100,18 @@
 
     .badge {
       display: inline-block;
-
       padding: 7px 12px;
-
-      border: 1px solid
-        rgba(255, 255, 255, 0.12);
-
+      border: 1px solid rgba(255, 255, 255, 0.12);
       border-radius: 999px;
-
-      background:
-        rgba(255, 255, 255, 0.05);
-
+      background: rgba(255, 255, 255, 0.05);
       color: #d5d5dc;
-
       font-size: 13px;
       font-weight: 600;
     }
 
     h1 {
       margin: 20px 0 14px;
-
-      font-size:
-        clamp(46px, 7vw, 72px);
-
+      font-size: clamp(46px, 7vw, 72px);
       line-height: 1;
       letter-spacing: -0.05em;
     }
@@ -149,26 +123,17 @@
 
     .intro {
       margin-bottom: 45px;
-
       padding: 28px;
-
       border-radius: 20px;
-
-      background:
-        rgba(255, 255, 255, 0.045);
-
-      border: 1px solid
-        rgba(255, 255, 255, 0.08);
-
+      background: rgba(255, 255, 255, 0.045);
+      border: 1px solid rgba(255, 255, 255, 0.08);
       color: #bcbcc6;
       font-size: 17px;
     }
 
     .section {
       padding: 30px 0;
-
-      border-bottom: 1px solid
-        rgba(255, 255, 255, 0.07);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.07);
     }
 
     .section:last-child {
@@ -177,7 +142,6 @@
 
     h2 {
       margin: 0 0 14px;
-
       font-size: 25px;
       letter-spacing: -0.02em;
     }
@@ -190,7 +154,6 @@
     ul {
       margin: 14px 0 0;
       padding-left: 22px;
-
       color: #b6b6c0;
     }
 
@@ -203,23 +166,25 @@
       font-weight: 600;
     }
 
+    .external-link {
+      color: white;
+      font-weight: 700;
+      text-decoration: underline;
+      text-decoration-color: rgba(255, 255, 255, 0.35);
+      text-underline-offset: 3px;
+    }
+
     .links-box {
       margin-top: 50px;
-
       padding: 25px;
-
       border-radius: 18px;
-
       background:
         linear-gradient(
           135deg,
           rgba(37, 244, 238, 0.07),
           rgba(254, 44, 85, 0.07)
         );
-
-      border: 1px solid
-        rgba(255, 255, 255, 0.09);
-
+      border: 1px solid rgba(255, 255, 255, 0.09);
       display: flex;
       gap: 20px;
       flex-wrap: wrap;
@@ -235,19 +200,14 @@
 
     footer {
       padding: 35px 0;
-
-      border-top: 1px solid
-        rgba(255, 255, 255, 0.08);
-
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
       color: #85858f;
-
       font-size: 14px;
     }
 
     .footer-content {
       display: flex;
       justify-content: space-between;
-
       gap: 20px;
       flex-wrap: wrap;
     }
@@ -255,6 +215,7 @@
     .footer-links {
       display: flex;
       gap: 22px;
+      flex-wrap: wrap;
     }
 
     .footer-links a:hover {
@@ -295,7 +256,7 @@
     </h1>
 
     <div class="updated">
-      Last updated: September 5, 2026
+      Last updated: September 6, 2026
     </div>
 
 
@@ -303,7 +264,8 @@
       This Privacy Policy explains how KeksikVerse
       handles information when creators use the
       desktop application to connect their social
-      media accounts and publish their own content.
+      media accounts and publish their own content
+      to supported platforms including TikTok and YouTube.
     </div>
 
 
@@ -316,14 +278,14 @@
       <p>
         KeksikVerse processes only the information
         required to provide account connection and
-        publishing functionality.
+        publishing functionality requested by the user.
       </p>
 
       <p>
         Depending on the connected platform, this may
-        include account identifiers, profile information,
-        authorization permissions, access tokens and
-        refresh tokens.
+        include account identifiers, basic profile
+        information, authorization permissions, access
+        tokens and refresh tokens.
       </p>
 
     </div>
@@ -360,19 +322,25 @@
     <div class="section">
 
       <h2>
-        3. Access and Refresh Tokens
+        3. Google and YouTube Authorization
       </h2>
 
       <p>
-        Authorization tokens may be stored locally on
-        the user's device so KeksikVerse can maintain
-        an authorized connection to TikTok and perform
-        publishing actions requested by the user.
+        KeksikVerse uses Google OAuth 2.0 to connect
+        a user's Google account and access YouTube
+        functionality authorized by that user.
       </p>
 
       <p>
-        Tokens are used only for communication with
-        the relevant platform APIs.
+        KeksikVerse does not request or store the user's
+        Google password. Authentication is performed
+        directly by Google.
+      </p>
+
+      <p>
+        For YouTube publishing, KeksikVerse may request
+        the authorization scope required to upload videos
+        to the user's own YouTube channel.
       </p>
 
     </div>
@@ -381,22 +349,83 @@
     <div class="section">
 
       <h2>
-        4. How Information Is Used
+        4. YouTube API Services
+      </h2>
+
+      <p>
+        KeksikVerse uses the YouTube Data API and
+        YouTube API Services to provide YouTube upload
+        functionality.
+      </p>
+
+      <p>
+        When the user confirms an upload, KeksikVerse
+        transmits the selected video and related metadata,
+        such as the title, description, tags and publishing
+        settings, to YouTube through the YouTube Data API.
+      </p>
+
+      <p>
+        Use of YouTube functionality is also subject to the
+        <a
+          class="external-link"
+          href="https://www.youtube.com/t/terms"
+          target="_blank"
+          rel="noopener noreferrer"
+        >YouTube Terms of Service</a>
+        and the
+        <a
+          class="external-link"
+          href="https://policies.google.com/privacy"
+          target="_blank"
+          rel="noopener noreferrer"
+        >Google Privacy Policy</a>.
+      </p>
+
+    </div>
+
+
+    <div class="section">
+
+      <h2>
+        5. Access and Refresh Tokens
+      </h2>
+
+      <p>
+        Authorization tokens may be stored locally on
+        the user's device so KeksikVerse can maintain
+        an authorized connection to TikTok, Google or
+        YouTube and perform actions requested by the user.
+      </p>
+
+      <p>
+        Tokens are used only for communication with
+        the relevant platform APIs and are not used
+        to request the user's platform password.
+      </p>
+
+    </div>
+
+
+    <div class="section">
+
+      <h2>
+        6. How Information Is Used
       </h2>
 
       <p>
         Information obtained through an authorized
-        TikTok connection is used to provide features
-        requested by the user, including:
+        platform connection is used only to provide
+        features requested by the user, including:
       </p>
 
       <ul>
         <li>
-          identifying the connected TikTok account;
+          identifying the connected account;
         </li>
 
         <li>
-          displaying available publishing settings;
+          displaying or preparing available publishing settings;
         </li>
 
         <li>
@@ -404,12 +433,12 @@
         </li>
 
         <li>
-          publishing content after user confirmation;
+          uploading or publishing content after user confirmation;
         </li>
 
         <li>
-          checking the processing status of submitted
-          content.
+          receiving the result or status of a submitted upload
+          when supported by the platform.
         </li>
       </ul>
 
@@ -419,7 +448,7 @@
     <div class="section">
 
       <h2>
-        5. Video Content
+        7. Video Content
       </h2>
 
       <p>
@@ -428,10 +457,10 @@
       </p>
 
       <p>
-        When the user confirms a TikTok publication,
+        When the user confirms a publication or upload,
         the selected content and related publishing
-        information are transmitted to TikTok through
-        TikTok's official APIs.
+        information are transmitted to the selected
+        platform through its official API.
       </p>
 
     </div>
@@ -440,7 +469,7 @@
     <div class="section">
 
       <h2>
-        6. Data Sharing
+        8. Data Sharing
       </h2>
 
       <p>
@@ -460,7 +489,7 @@
     <div class="section">
 
       <h2>
-        7. Local Data Storage
+        9. Local Data Storage
       </h2>
 
       <p>
@@ -468,6 +497,12 @@
         Authorization information required by the
         application may be stored locally on the
         user's computer.
+      </p>
+
+      <p>
+        KeksikVerse does not require a separate
+        KeksikVerse cloud account in order to use
+        the local desktop publishing workflow.
       </p>
 
       <p>
@@ -482,7 +517,7 @@
     <div class="section">
 
       <h2>
-        8. Revoking TikTok Access
+        10. Revoking TikTok Access
       </h2>
 
       <p>
@@ -492,8 +527,8 @@
       </p>
 
       <p>
-        Locally stored authorization information may
-        also be removed from the user's device.
+        Locally stored TikTok authorization information
+        may also be removed from the user's device.
       </p>
 
     </div>
@@ -502,12 +537,77 @@
     <div class="section">
 
       <h2>
-        9. Third-Party Services
+        11. Revoking Google / YouTube Access
+      </h2>
+
+      <p>
+        Users may revoke KeksikVerse access to their
+        Google account at any time through Google Account
+        permissions.
+      </p>
+
+      <p>
+        Google Account permissions can be reviewed at:
+        <a
+          class="external-link"
+          href="https://myaccount.google.com/permissions"
+          target="_blank"
+          rel="noopener noreferrer"
+        >Google Account — Third-party access</a>.
+      </p>
+
+      <p>
+        After access is revoked, KeksikVerse can no
+        longer use the revoked Google authorization
+        to upload videos to the user's YouTube channel.
+      </p>
+
+      <p>
+        Any locally stored Google OAuth authorization
+        data may also be removed from the user's device.
+      </p>
+
+    </div>
+
+
+    <div class="section">
+
+      <h2>
+        12. Data Deletion
+      </h2>
+
+      <p>
+        KeksikVerse is designed as a local desktop
+        application. Authorization tokens and local
+        application data stored on the user's device
+        can be deleted by removing the locally stored
+        authorization data or application data.
+      </p>
+
+      <p>
+        Revoking access through TikTok or Google prevents
+        KeksikVerse from continuing to use the revoked
+        authorization.
+      </p>
+
+      <p>
+        Content already uploaded to a third-party platform
+        is controlled by that platform and the user's
+        account settings on that platform.
+      </p>
+
+    </div>
+
+
+    <div class="section">
+
+      <h2>
+        13. Third-Party Services
       </h2>
 
       <p>
         KeksikVerse relies on third-party platforms
-        and APIs, including TikTok.
+        and APIs, including TikTok, YouTube and Google.
       </p>
 
       <p>
@@ -516,13 +616,23 @@
         and privacy policies.
       </p>
 
+      <p>
+        Google privacy practices are described in the
+        <a
+          class="external-link"
+          href="https://policies.google.com/privacy"
+          target="_blank"
+          rel="noopener noreferrer"
+        >Google Privacy Policy</a>.
+      </p>
+
     </div>
 
 
     <div class="section">
 
       <h2>
-        10. Data Security
+        14. Data Security
       </h2>
 
       <p>
@@ -543,7 +653,7 @@
     <div class="section">
 
       <h2>
-        11. Changes to This Privacy Policy
+        15. Changes to This Privacy Policy
       </h2>
 
       <p>
@@ -563,7 +673,7 @@
     <div class="section">
 
       <h2>
-        12. Contact
+        16. Contact
       </h2>
 
       <p>
@@ -583,7 +693,23 @@
       </a>
 
       <a href="terms.html">
-        Terms of Service
+        KeksikVerse Terms of Service
+      </a>
+
+      <a
+        href="https://www.youtube.com/t/terms"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        YouTube Terms of Service
+      </a>
+
+      <a
+        href="https://policies.google.com/privacy"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Google Privacy Policy
       </a>
 
     </div>
